@@ -1,0 +1,14 @@
+l = []
+f = 0
+def fibonacci(n):
+    i = 0
+    f = 0
+    l =[]
+    while(i!=n):
+        l.append(f)
+        if f == 0:
+            f+=1
+        f=f+l[i-1]
+        i+=1
+        
+    return l

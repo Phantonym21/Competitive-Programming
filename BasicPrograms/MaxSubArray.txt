@@ -1,0 +1,10 @@
+def maxSubArray(self, nums):
+        ms = float('-inf')
+        s = 0
+        for i, j in enumerate(nums):
+            s += j
+            if s > ms:
+                ms = s
+            if s < 0:
+                s = 0
+        return ms
